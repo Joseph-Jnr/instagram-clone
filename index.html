@@ -7,9 +7,11 @@
     <title>Instagram</title>
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Preloader -->
     <div class="preloader">
         <div class="preloader-main">
             <div class="logo text-center">
@@ -23,50 +25,111 @@
             </div>
         </div>
     </div>
+    <!-- Preloader end -->
 
+    <!-- Login page -->
     <section>
-        <div class="container-fluid main-section mt-3">
+        <div class="container main-section mt-3">
             <div class="row">
                 <div class="col-md-6 login-img">
                     <div class="image">
-                        <img src="assets/img/instadevice.png" width="780" height="auto" alt="">
+                        <img src="assets/img/instadevice.png" width="650" height="auto" alt="phone image">
                     </div>
                 </div>
                 <div class="col-md-6 login-form">
                     <div class="form-section">
                         <div class="header text-center">
-                            <img src="assets/img/logo.png" width="200" height="auto" alt="">
+                            <img src="assets/img/logo.png" width="180" height="auto" alt="instagram logo">
                         </div>
-                        <form action="" class="mt-5">
-                            <div class="form-group">
+                        <!-- Login form -->
+                        <form action="" class="mt-5 text-center">
+                            <div class="form-group d-flex justify-content-center">
                                 <input type="text" placeholder="Phone number, username, or email" class="form-control">
                             </div>
-                            <div class="form-group">
+                            <div class="form-group d-flex justify-content-center">
                                 <input type="password" placeholder="Password" class="form-control">
                             </div>
                             <div class="login-btn">
                                 <input type="submit" value="Log in" class="btn btn-primary btn-sm">
                             </div>
                         </form>
+                        <!-- Login form end -->
 
-                        <div class="alternative d-flex justify-content-center align-items-center">
-                            <hr class="login-hr">
+                        <div class="alternative d-flex justify-content-between align-items-center mt-3">
+                            <div class="line"></div>
                             <p>OR</p>
-                            <hr class="login-hr">
+                            <div class="line"></div>
                         </div>
-                        <div class="socials">
-                            <p><i ></i> Log in with Facebook</p>
-                            <p>Forgot password</p>
+                        <div class="socials text-center">
+                            <p class="d-flex align-items-center justify-content-center"><i class="fa-brands fa-square-facebook"></i> <span>Log in with Facebook</span></p>
+                            <a href="">Forgot password?</a>
                         </div>
                     </div>
-                    <div class="form-section">
+                    <div class="form-section d-flex justify-content-center align-items-center">
                         <p>Don't have an account? <a href="">Sign up</a></p>
+                    </div>
+                    <!-- Download buttons -->
+                    <div class="form-section download-area text-center">
+                        <p>Get the app.</p>
+                        <div class="stores">
+                            <a href=""><img src="assets/img/as.png" alt="app store"></a>
+                            <a href=""><img src="assets/img/gp.png" alt="play store"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
+            <!-- Footer -->
+            <div class="footer mt-5">
+                <div class="footer-links text-center">
+                    <ul>
+                        <li><a href="#">Meta</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Help</a></li>
+                        <li><a href="#">API</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Top Accounts</a></li>
+                        <li><a href="#">Hashtags</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">Instagram Lite</a></li>
+                        <li><a href="#">Contact Uploading & Non-Users</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="#">Dance</a></li>
+                        <li><a href="#">Food & Drink</a></li>
+                        <li><a href="#">Home & Garden</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Visual Arts</a></li>
+                    </ul>
+                </div>
+                <div class="lang-x-copywrite text-center mb-5 d-flex justify-content-center align-items-center">
+                    <div class="lang d-flex justify-content-center align-items-center">
+                        <select name="" id="">
+                            <option value="English">English</option>
+                            <option value="Francais">Francais</option>
+                            <option value="Espagnol">Espagnol</option>
+                            <option value="Igbo">Igbo</option>
+                            <option value="Yoruba">Yoruba</option>
+                            <option value="Hausa">Hausa</option>
+                            <option value="Chinese">Chinese</option>
+                            <option value="Twi">Twi</option>
+                            <option value="Fongbe">Fongbe</option>
+                            <option value="Potugues">Potugues</option>
+                        </select>
+                        <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                    <div class="copywrite">
+                        <p>&copy; <script>document.write(new Date().getFullYear());</script> Instagram from Meta</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+        </div>
     </section>
+    <!-- Login page end -->
 
 
     <script src="assets/js/jquery-2.2.4.min.js"></script>
