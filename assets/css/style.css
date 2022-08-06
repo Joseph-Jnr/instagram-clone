@@ -1,5 +1,6 @@
 :root {
     --grey: rgb(159, 159, 159);
+    --blue: rgb(31, 155, 244);
 }
 /* Preloader */
 .preloader {
@@ -27,6 +28,7 @@
 
 body {
     background: rgb(249, 249, 249);
+    scroll-behavior: smooth;
 }
 
 a {
@@ -55,7 +57,7 @@ a {
 
 .login-form .form-section:nth-child(2) a {
     font-weight: 500;
-    color: rgb(31, 155, 244);
+    color: var(--blue);
 }
 
 .login-form .form-section:nth-child(3) {
@@ -195,9 +197,10 @@ a {
     margin-left: 30px;
 }
 
-
-
 /* Login section ends here */
+
+
+
 
 /* Homepage styling */
 
@@ -239,6 +242,18 @@ header{
     margin-left: 25px;
 }
 
+.nav .single-icon span {
+    position: absolute;
+    background: rgb(242, 33, 92);
+    width: 20px;
+    height: 20px;
+    border-radius: 60px;
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
 .nav .single-icon img {
     width: 20px;
     height: auto;
@@ -254,4 +269,161 @@ header{
     background: url(../img/profile_pic.jpg);
     background-size: cover;
     border-radius: 60px;
+}
+
+/* Story area */
+.main-body {
+    padding: 0px 131px 0px 131px;
+    padding-top: 90px;
+}
+
+.story-wrap {
+    background: #fff;
+    border: 1px solid rgb(227, 227, 227);
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: hidden;
+}
+
+.story-wrap .single-story img {
+    width: 68px;
+    height: auto;
+    padding: 2px;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(45deg, rgb(255, 242, 0), rgb(223, 6, 223)) border-box;
+    border: 2px solid transparent;
+    border-radius: 60px;
+}
+
+.story-wrap .single-story {
+    margin-left: 12px;
+}
+
+.story-wrap .single-story:nth-child(1) {
+    margin-left: 0px;
+}
+
+.story-wrap .single-story .live {
+    position: relative;
+    background: rgb(242, 33, 92);
+    width: 34px;
+    height: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border: 3px solid #fff;
+    font-size: 9px;
+    color: #fff;
+    margin-top: -13px;
+    z-index: 1;
+    left: 27%;
+}
+
+.story-wrap .single-story .username-live,
+.story-wrap .single-story .username {
+    font-size: 12px;
+    margin-bottom: -3px;
+    margin-top: -3px;
+}
+
+.story-wrap .single-story .username {
+    font-size: 12px;
+    margin-bottom: -3px;
+    margin-top: 5px;
+}
+
+
+/* Feeds */
+.feeds {
+    margin-top: 15px;
+}
+
+.single-feed .header {
+    background: #fff;
+    border: 1px solid rgb(227, 227, 227);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 10px;
+}
+
+.single-feed .profile img {
+    width: 30px;
+    height: auto;
+    border-radius: 60px;
+}
+
+.single-feed .profile h5 {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+
+/* Sidebar */
+.sidebar {
+    margin-left: 10px;
+}
+.sidebar .profile-info img {
+    width: 58px;
+    height: auto;
+    border-radius: 60px;
+}
+
+.sidebar .profile-info .text,
+.sidebar .left .text {
+    margin-left: 14px;
+}
+
+.sidebar .profile-info .text h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: -1px;
+}
+
+.sidebar .profile-info .text span {
+    font-size: 14px;
+    color: var(--grey);
+}
+
+.sidebar .profile-info .switch {
+    font-size: 13px;
+    color: var(--blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sidebar .suggestions h4 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--grey);
+}
+
+.sidebar .suggestions h5 {
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sidebar .left img {
+    width: 35px;
+    height: auto;
+    border-radius: 60px;
+}
+.sidebar .left .text h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: -2px;
+}
+
+.sidebar .left .text span {
+    font-size: 12px;
+    color: var(--grey);
+}
+.sidebar .right p {
+    font-size: 13px;
+    color: var(--blue);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.sidebar .single-suggestion {
+    margin-bottom: 12px;
 }
