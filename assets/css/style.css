@@ -15,7 +15,7 @@
 
 .preloader-main .logo {
     position: absolute;
-    top: 30%;
+    top: 35%;
     left: 46%;
 }
 
@@ -69,7 +69,7 @@ a {
     margin-bottom: -20px;
 }
 
-input.form-control{
+.login-form input.form-control{
     background:rgb(251, 251, 251);
     margin-top: 8px;
     border-radius: 2px;
@@ -78,14 +78,14 @@ input.form-control{
     padding: 9px 6px 9px 6px;
 }
 
-input.form-control:focus, 
-input.form-control:active {
+.login-form input.form-control:focus, 
+.login-form input.form-control:active {
     box-shadow: none;
     border: 1px solid rgb(148, 148, 148);
 }
 
-input[type="text"]::placeholder,
-input[type="password"]::placeholder{
+.login-form input[type="text"]::placeholder,
+.login-form input[type="password"]::placeholder{
     font-size: 12px;
     color: var(--grey);
 }
@@ -193,4 +193,65 @@ input[type="password"]::placeholder{
     font-size: 13px;
     margin-top: 17px;
     margin-left: 30px;
+}
+
+
+
+/* Login section ends here */
+
+/* Homepage styling */
+
+header{
+    background: #fff;
+    padding: 10px 160px 10px 160px;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    position: fixed;
+    width: 100%;
+}
+
+.search i {
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 90px;
+    color: var(--grey);
+}
+
+.search input[type=text].form-control {
+    background: rgb(233, 233, 233);
+    padding: 6px 35px 6px 35px;
+    border: none;
+    margin-left: 80px;
+    max-width: 80%;
+}
+
+.search input[type=text].form-control:focus,
+.search input[type=text].form-control:active {
+    box-shadow: none;
+    border: none;
+}
+
+.search input[type=text].form-control::placeholder {
+    color: var(--grey);
+    font-weight: 300;
+}
+
+.nav .single-icon {
+    margin-left: 25px;
+}
+
+.nav .single-icon img {
+    width: 20px;
+    height: auto;
+}
+
+.profile {
+    padding-top: 2px;
+}
+
+.profile .img {
+    width: 25px;
+    height: 25px;
+    background: url(../img/profile_pic.jpg);
+    background-size: cover;
+    border-radius: 60px;
 }
